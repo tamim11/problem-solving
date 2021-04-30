@@ -5,7 +5,7 @@ class SelectionSort {
     #len
     #dir
 
-    // dir 1 is for ascending sort and -1 for descending
+    // pass any second argument to sort in descend order
     constructor(numbers, dir) {
         this.#numbers = numbers
         this.#dir = dir
@@ -39,9 +39,7 @@ class SelectionSort {
     }
 
     displayNumbers() {
-        this.#numbers.forEach(element => {
-            console.log(element)
-        })
+        this.#numbers.forEach(element => console.log(element))
     }
 
 }
